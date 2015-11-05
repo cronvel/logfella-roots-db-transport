@@ -1,0 +1,37 @@
+{
+  "name": "logfella-roots-db-transport",
+  "version": "0.3.0",
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "description": "A Logfella transport using Roots DB",
+  "main": "lib/RootsDb.transport.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "roots-db": "^0.5.21",
+    "tree-kit": "^0.5.6"
+  },
+  "devDependencies": {
+    "expect.js": "^0.3.1",
+    "jshint": "^2.5.6",
+    "mocha": "^1.21.4"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cronvel/logfella-roots-db-transport.git"
+  },
+  "keywords": [
+    "logger",
+    "db"
+  ],
+  "author": "Cédric Ronvel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cronvel/logfella-roots-db-transport/issues"
+  }
+}
