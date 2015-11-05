@@ -1,6 +1,6 @@
 {
   "name": "logfella-roots-db-transport",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "engines": {
     "node": ">=4.0.0"
   },
@@ -15,7 +15,7 @@
     "tree-kit": "^0.5.6"
   },
   "devDependencies": {
-    "logfella": "^0.3.0",
+    "logfella": "^0.3.2",
     "expect.js": "^0.3.1",
     "jshint": "^2.5.6",
     "mocha": "^1.21.4"
