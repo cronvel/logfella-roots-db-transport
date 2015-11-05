@@ -29,12 +29,10 @@
 
 
 
-var Logfella = require( '../lib/Logfella.js' ) ;
-var async = require( 'async-kit' ) ;
+var Logfella = require( 'logfella' ) ;
+//var async = require( 'async-kit' ) ;
 //var expect = require( 'expect.js' ) ;
 
-// Do not run the test if roots-db is not installed
-try { require( 'roots-db' ) ; } catch ( error ) { return ; }
 
 
 
