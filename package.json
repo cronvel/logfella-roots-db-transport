@@ -1,6 +1,6 @@
 {
   "name": "logfella-roots-db-transport",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "engines": {
     "node": ">=4.0.0"
   },
