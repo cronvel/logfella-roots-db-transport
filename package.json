@@ -1,6 +1,6 @@
 {
   "name": "logfella-roots-db-transport",
-  "version": "0.3.4",
+  "version": "0.3.5",
   "engines": {
     "node": ">=4.0.0"
   },
@@ -11,8 +11,8 @@
   },
   "dependencies": {
     "logfella-common-transport": "^0.3.3",
-    "roots-db": "^0.7.5",
-    "tree-kit": "^0.5.6"
+    "roots-db": "^0.12.5",
+    "tree-kit": "^0.5.7"
   },
   "devDependencies": {
     "logfella": "^0.3.2",
