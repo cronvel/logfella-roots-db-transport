@@ -1,8 +1,8 @@
 /*
-	The Cedric's Swiss Knife (CSK) - CSK logger toolbox
+	Logfella Roots DB Transport
 
-	Copyright (c) 2015 Cédric Ronvel 
-	
+	Copyright (c) 2015 - 2018 Cédric Ronvel
+
 	The MIT License (MIT)
 
 	Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -26,14 +26,12 @@
 
 /* global describe, it */
 
+"use strict" ;
+
 
 
 
 var Logfella = require( 'logfella' ) ;
-//var async = require( 'async-kit' ) ;
-//var expect = require( 'expect.js' ) ;
-
-
 
 
 
@@ -44,7 +42,7 @@ var Logfella = require( 'logfella' ) ;
 
 describe( "Roots DB Transport" , function() {
 	
-	it( "simple test" , function( done ) {
+	it( "simple test" , async () => {
 		
 		var logger = Logfella.create() ;
 		
@@ -56,10 +54,8 @@ describe( "Roots DB Transport" , function() {
 		logger.addTransport( 'console' , { minLevel: 'trace' , output: process.stderr } ) ;
 		logger.addTransport( 'rootsDb' , { minLevel: 'trace' , url: 'mongodb://localhost:27017/logfella/logs' } ) ;
 		
-		logger.warning( 'storage' , 'gloups' , 'We are running out of storage! Only %iMB left' , 139 ) ;
-		
-		// The last, with callback...
-		logger.info( 'idle' , { some: 'meta' , few: 'data' , somethingElse: 4 } , 'Youpla boum!' , done ) ;
+		await logger.warning( 'storage' , 'gloups' , 'We are running out of storage! Only %iMB left' , 139 ) ;
+		await logger.info( 'idle' , { some: 'meta' , few: 'data' , somethingElse: 4 } , 'Youpla boum!' ) ;
 	} ) ;
 	
 } ) ;
